@@ -1,0 +1,23 @@
+
+.wrapper {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    border-bottom: 1px dashed #DB6A8F;
+}
+
+.wrapper h2 {
+    font-size: 36px;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+    line-height: 1.2; /* Ajustement de line-height */
+    text-transform: capitalize;
+    color: #0b0909;
+    flex-grow: 1;
+    text-align: center;
+}
+
+.wrapper span {
+    color: #0b0909;
+    margin-left: 10px; /* Ajout de marge pour espacer l'icône */
+}

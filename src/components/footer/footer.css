@@ -1,0 +1,36 @@
+.footer {
+  background-color: var(--yellow-themo-nav-backround-color); /* Exemple de couleur de fond */
+    padding: 20px;
+    text-align: center;
+  }
+
+  .footer-social-icon {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  
+  .footer-icons-container {
+    margin: 0 10px;
+  }
+  
+  .footer-icons-container img {
+    width: 30px;
+    height: auto;
+  }
+  
+  .footer-copyright {
+    margin-top: 20px;
+  }
+  
+  .footer-copyright hr {
+    border: none;
+    border-top: 1px solid #ddd;
+    margin: 20px 0;
+  }
+  
+  .footer-copyright p {
+    font-size: 14px;
+    color: #2a2929;
+  }
+  

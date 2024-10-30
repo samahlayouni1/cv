@@ -1,0 +1,115 @@
+/* Section principale pour la mise en page du composant Resume */
+.resume {
+    height: 100%;
+}
+
+.timeline {
+    display: flex;
+    width: 100%;
+    padding: 20px;
+}
+
+.timeline__experience, .timeline__education {
+    width: 50%;
+    gap: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Styles pour les titres des sections Experience, Education, Associative Life */
+.timeline__experience__header-text {
+    display: inline-block;
+    color: #5784BA;
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 1rem;
+    letter-spacing: 0.5px;
+    position: relative;
+    text-transform: uppercase;
+    padding: 5px 10px;
+    border-bottom: 2px solid #5784BA;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+}
+
+.timeline__experience__header-text::before,
+.timeline__experience__header-text::after {
+    position: absolute;
+    content: "";
+    width: 2px;
+    height: 5px;
+    background-color: #5784BA;
+    bottom: -1px;
+}
+
+.timeline__experience__header-text::before {
+    left: 0;
+}
+
+.timeline__experience__header-text::after {
+    right: 0;
+}
+
+/* Styles pour les éléments de la timeline */
+.timeline__experience__vertical-timeline-element {
+    padding: 0px 0px 30px 0px;
+}
+
+.timeline__experience__vertical-timeline-element:last-child {
+    padding-bottom: 0px;
+}
+
+/* Styles pour le contenu des éléments de la timeline */
+.vertical-timeline-element-title-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 5px;
+}
+
+.vertical-timeline-element-title-wrapper h3 {
+    font-size: 16px;
+    margin: 0;
+}
+
+.vertical-timeline-element-title-wrapper h4 {
+    font-size: 12px;
+    margin: 0;
+}
+
+.vertical-timeline-element-title-wrapper p {
+    font-size: 14px;
+    margin: 0;
+}
+
+/* Style pour la date des éléments de la timeline */
+.timeline__experience__vertical-timeline-element .vertical-timeline-element-date {
+    font-size: 15px;
+    opacity: 1;
+}
+
+/* Style pour la description des éléments de la timeline */
+.vertical-timeline-element-description {
+    font-size: 18px;
+}
+
+/* Désactiver les ombres des éléments de la timeline */
+.vertical-timeline-element-content {
+    box-shadow: none;
+}
+
+/* Masquer les flèches des éléments de la timeline */
+.vertical-timeline-element-content-arrox {
+    display: none;
+}
+
+@media only screen and (max-width: 768px) {
+        .timeline{
+            flex-direction: column;
+        }
+        .timeline__experience, .timeline__education {
+            width: 100%;
+            gap: 2rem;
+        }
+      }
